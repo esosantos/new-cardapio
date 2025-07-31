@@ -17,7 +17,7 @@
 <body class="d-flex flex-column min-vh-100 bg-dark text-white">
   <div class="container text-center py-5 ">
     <img src="assets/img/logo.png" alt="Logo BlackPoint Bar" class="img-fluid mb-4" style="max-width: 200px;">
-    <h1 class="mb-4">Bem-vindo(a)<br>BlackPoint Bar</h1>
+    <h1 class="mb-4">Bem-vindo(a)<br>Black Point Bar</h1>
     <a href="menu.html" onclick="setAccessGranted(event)" id="menu-button"
       class="btn btn-lg btn-warning px-5 py-3 mb-4 shadow rounded-pill fw-bold pulse-button">
       <i class="fas fa-utensils me-2"></i> <span id="button-text">Cardápio</span>
@@ -26,7 +26,7 @@
     <div class="beer-icon">
       <i class="fas fa-beer cheers-right"></i>
       <i class="fas fa-beer cheers-left"></i>
-      
+
     </div>
 
     <script>
@@ -66,9 +66,19 @@
     </div>
   </div>
 
-  <footer class="bg-black text-center text-white py-3 mt-auto">
-    Todos os direitos reservados &copy; BlackPoint Bar
+  <footer class="bg-black text-center text-white py-4 mt-auto">
+    <div class="container">
+      <p class="mb-0 font-light text-sm md:text-base">
+        © <span id="copyright-years">1994–2025</span> Black Point Bar. Todos os direitos reservados.
+      </p>
+    </div>
   </footer>
+
+  <script>
+    // Atualiza o ano automaticamente (formato: 1994–2025)
+    document.getElementById('copyright-years').textContent =
+      `1994–${new Date().getFullYear()}`;
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
