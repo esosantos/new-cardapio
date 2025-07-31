@@ -34,21 +34,39 @@
   }
   
   /* Botão de Voltar no rodapé */
-.voltar-btn {
-    transition: all 0.3s ease;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    border-radius: 2rem;
-    padding: 0.5rem 2rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-  }
-  
-  /* Efeito ao passar o mouse */
-  .voltar-btn:hover {
-    transform: scale(1.05);
-    background-color: #ffc107 !important;
-    color: #000 !important;
-  }
+.btn-voltar {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 12px 28px;
+  background: #f9c846; /* amarelo dourado queimado */
+  color: #1f1f1f;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-voltar i {
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* animação de mover a setinha para o lado */
+.btn-voltar:hover i {
+  transform: translateX(-5px);
+}
+
+/* hover do botão */
+.btn-voltar:hover {
+  background: #ffda63;
+  transform: scale(1.04);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+
   
   /* Rodapé fixo com leve sombra */
   footer {
