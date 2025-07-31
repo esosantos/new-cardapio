@@ -14,6 +14,34 @@ body {
     box-shadow: 0 0 15px #ffc107;
   }
 
+  @keyframes pulseColor {
+  0%, 100% {
+    background-color: #ffc107; /* amarelo */
+  }
+  50% {
+    background-color: #ff9800; /* laranja */
+  }
+}
+
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.pulse-button {
+  animation: pulseColor 4s ease-in-out infinite, floatUpDown 3s ease-in-out infinite;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.pulse-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 193, 7, 0.7);
+}
+
   .beer-icon {
     margin-top: 1rem;
     text-align: center;
@@ -100,4 +128,5 @@ body {
     display: inline-block;
     transition: opacity 0.4s ease-in-out;
   }
+  
   

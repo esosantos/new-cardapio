@@ -14,8 +14,9 @@
 </head>
 
 
-<body class="d-flex flex-column min-vh-100 bg-dark text-white">
-  <div class="container text-center py-5 ">
+<body class="d-flex flex-column min-vh-100 bg-dark text-white ">
+ 
+  <div class="container text-center py-5" >
     <img src="assets/img/logo.png" alt="Logo BlackPoint Bar" class="img-fluid mb-4" style="max-width: 200px;">
     <h1 class="mb-4">Bem-vindo(a)<br>Black Point Bar</h1>
     <a href="menu.html" onclick="setAccessGranted(event)" id="menu-button"
@@ -36,8 +37,8 @@
         window.location.href = 'menu.html';
       }
 
-      const textElement = document.getElementById('btn-text');
-      const messages = ['Cardápio Digital', 'Clique aqui'];
+      const textElement = document.getElementById('button-text');
+      const messages = ['Cardápio', 'Clique aqui'];
       let index = 0;
 
       setInterval(() => {
