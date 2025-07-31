@@ -10,7 +10,9 @@
     animation: moveBg 10s linear infinite;
     pointer-events: none;
   }
-  
+    .text-justify {
+  text-align: justify;
+}
   @keyframes moveBg {
     0% {
       background-position: 0 0;
