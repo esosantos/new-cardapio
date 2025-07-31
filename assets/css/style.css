@@ -34,6 +34,38 @@ body {
   .cheers-right {
     transform: rotate(25deg);
   }
+ .btn-voltar-custom {
+  background-color: #f9c846; /* amarelo vibrante */
+  color: #1f1f1f;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-voltar-custom i {
+  transition: transform 0.3s ease;
+}
+
+.btn-voltar-custom:hover {
+  background-color: #ffda63;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.btn-voltar-custom:hover i {
+  transform: translateX(-5px); /* setinha mexe pra esquerda */
+}
+
+
   
   @keyframes cheers-bounce {
     0%, 100% {
