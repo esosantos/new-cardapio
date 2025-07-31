@@ -1,0 +1,23 @@
+.card-drink {
+    background-color: #1e1e1e;
+    border: 1px solid #ffc107;
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-drink:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255, 193, 7, 0.3);
+  }
+  
+  .card-drink img {
+    max-height: 160px;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+  }
+  
+  .card-body h5 {
+    font-weight: bold;
+    color: #ffc107;
+  }
+  

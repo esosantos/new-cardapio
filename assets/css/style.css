@@ -1,0 +1,69 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  button.btn {
+    padding: 1.2rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+  }
+
+  button.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ffc107;
+  }
+
+  .beer-icon {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #f9c80e;
+    animation: cheers-bounce 2s infinite ease-in-out;
+  }
+  
+  .beer-icon i {
+    margin: 0 0.5rem;
+    display: inline-block;
+  }
+  
+  .cheers-left {
+    transform: rotate(-25deg);
+  }
+  
+  .cheers-right {
+    transform: rotate(25deg);
+  }
+  
+  @keyframes cheers-bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+  
+  
+  @keyframes cheers {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-4px); }
+  }
+  
+  #animated-btn {
+    transition: all 0.3s ease-in-out;
+    animation: pulse 1.5s infinite;
+  }
+
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  #btn-text {
+    display: inline-block;
+    transition: opacity 0.4s ease-in-out;
+  }
+  

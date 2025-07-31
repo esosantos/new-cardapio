@@ -1,0 +1,14 @@
+h4 {
+    color: #ffc107;
+    font-weight: bold;
+  }
+  
+  .list-group-item {
+    border: none;
+    font-size: 1.1rem;
+  }
+  
+  .list-group-item span:last-child {
+    font-weight: bold;
+  }
+  

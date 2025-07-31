@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cervejas | BlackPoint Bar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/cervejas.css" />
+    <script>
+        if (!sessionStorage.getItem('access_granted')) {
+            window.location.href = 'index.html';
+        }
+    </script>
+  
+</head>
+
+<body class="bg-dark text-white d-flex flex-column min-vh-100">
+
+    <main class="container py-5">
+        <h2 class="text-center text-warning mb-4">Cervejas</h2>
+
+        <!-- Seção: Cerveja 600ml -->
+        <div class="mb-4">
+            <h4 class="border-bottom border-warning pb-1">Cerveja 600ml</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+                    <span>Skol - Pilsen</span>
+                    <span>R$ 9,00</span>
+                </li>
+                <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+                    <span>Brahma - Puro Malte</span>
+                    <span>R$ 10,00</span>
+                </li>
+                <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+                    <span>Heineken - Puro Malte</span>
+                    <span>R$ 12,00</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Seção: Long Neck -->
+        <div class="mb-4">
+            <h4 class="border-bottom border-warning pb-1">Long Neck</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+                    <span>Heineken - Puro Malte</span>
+                    <span>R$ 8,00</span>
+                </li>
+                <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+                    <span>Budweiser - Pilsen</span>
+                    <span>R$ 7,00</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Seção: Lata -->
+        <div class="mb-4">
+            <h4 class="border-bottom border-warning pb-1">Lata</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+                    <span>Skol - Pilsen</span>
+                    <span>R$ 5,00</span>
+                </li>
+                <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+                    <span>Antarctica - Pilsen</span>
+                    <span>R$ 5,50</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Seção: Litrinho -->
+        <div class="mb-4">
+            <h4 class="border-bottom border-warning pb-1">Litrinho</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+                    <span>Nova Schin - Pilsen</span>
+                    <span>R$ 4,00</span>
+                </li>
+                <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+                    <span>Brahma - Pilsen</span>
+                    <span>R$ 4,50</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Seção: Malzbier -->
+        <div class="mb-4">
+            <h4 class="border-bottom border-warning pb-1">Malzbier</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+                    <span>Brahma Malzbier</span>
+                    <span>R$ 6,00</span>
+                </li>
+                <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+                    <span>Caracu</span>
+                    <span>R$ 7,00</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Seção: Sem Álcool -->
+        <div class="mb-4">
+            <h4 class="border-bottom border-warning pb-1">Sem Álcool</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+                    <span>Heineken 0.0%</span>
+                    <span>R$ 6,50</span>
+                </li>
+                <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+                    <span>Brahma 0.0%</span>
+                    <span>R$ 6,00</span>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer class="text-center bg-black text-white py-3 mt-auto">
+        <button class="btn btn-secondary" onclick="goBackToBebidas()">Voltar</button>
+    </footer>
+
+    <script>
+        function goBackToBebidas() {
+            window.location.href = "bebidas.html";
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Destilados | BlackPoint Bar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/cervejas.css" />
+  <script>
+    if (!sessionStorage.getItem('access_granted')) {
+      window.location.href = 'index.html';
+    }
+  </script>
+</head>
+
+<body class="bg-dark text-white d-flex flex-column min-vh-100">
+
+  <main class="container py-5">
+    <h2 class="text-center text-warning mb-4">Destilados</h2>
+
+    <!-- Seção: Whisky -->
+    <div class="mb-4">
+      <h4 class="border-bottom border-warning pb-1">Whisky</h4>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+          <span>Red Label</span>
+          <span>R$ 18,00</span>
+        </li>
+        <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+          <span>Black Label</span>
+          <span>R$ 25,00</span>
+        </li>
+        <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+          <span>Old Parr</span>
+          <span>R$ 28,00</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Seção: Destilados -->
+    <div class="mb-4">
+      <h4 class="border-bottom border-warning pb-1">Destilados</h4>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+          <span>Dreher</span>
+          <span>R$ 7,00</span>
+        </li>
+        <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+          <span>Domecq</span>
+          <span>R$ 7,50</span>
+        </li>
+        <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+          <span>Alcatrão São João da Barra</span>
+          <span>R$ 6,00</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Seção: Cachaças -->
+    <div class="mb-4">
+      <h4 class="border-bottom border-warning pb-1">Cachaças</h4>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+          <span>Gravinho</span>
+          <span>R$ 5,00</span>
+        </li>
+        <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+          <span>Cachaça Ouro</span>
+          <span>R$ 6,00</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Seção: Licores -->
+    <div class="mb-4">
+      <h4 class="border-bottom border-warning pb-1">Licores</h4>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+          <span>Licor de Jenipapo</span>
+          <span>R$ 6,50</span>
+        </li>
+        <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+          <span>Licor de Marula</span>
+          <span>R$ 7,00</span>
+        </li>
+      </ul>
+    </div>
+
+  </main>
+
+  <footer class="text-center bg-black text-white py-3 mt-auto">
+    <button class="btn btn-secondary" onclick="goBackToBebidas()">Voltar</button>
+  </footer>
+
+  <script>
+    function goBackToBebidas() {
+      window.location.href = "bebidas.html";
+    }
+  </script>
+
+</body>
+
+</html>

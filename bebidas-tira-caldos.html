@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caldos | BlackPoint Bar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/cervejas.css" />
+  <script>
+    if (!sessionStorage.getItem('access_granted')) {
+      window.location.href = 'index.html';
+    }
+  </script>
+</head>
+
+<body class="bg-dark text-white d-flex flex-column min-vh-100">
+
+  <main class="container py-5">
+    <h2 class="text-center text-warning mb-4">Caldos</h2>
+
+    <!-- Seção: Caldos Tradicionais -->
+    <div class="mb-4">
+      <h4 class="border-bottom border-warning pb-1">Trio de Caldos</h4>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+          <span>Caldo de feijão</span>
+          <span>R$ 12,00</span>
+        </li>
+        <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+          <span>Caldo de mocotó</span>
+          <span>R$ 14,00</span>
+        </li>
+        <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+          <span>Caldo verde</span>
+          <span>R$ 13,00</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Seção: Especiais da casa -->
+    <div class="mb-4">
+      <h4 class="border-bottom border-warning pb-1">Especiais da Casa</h4>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+          <span>Caldo de camarão com leite de coco</span>
+          <span>R$ 18,00</span>
+        </li>
+        <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+          <span>Caldo de sururu</span>
+          <span>R$ 17,00</span>
+        </li>
+      </ul>
+    </div>
+
+  </main>
+
+  <footer class="text-center bg-black text-white py-3 mt-auto">
+    <button class="btn btn-secondary" onclick="goBackToTiraGostos()">Voltar</button>
+  </footer>
+
+  <script>
+    function goBackToTiraGostos() {
+      window.location.href = "tiragosto.html";
+    }
+  </script>
+
+</body>
+
+</html>

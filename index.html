@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlackPoint Bar - Tela Inicial</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+</head>
+
+
+<body class="d-flex flex-column min-vh-100 bg-dark text-white">
+  <div class="container text-center py-5">
+    <img src="assets/img/logo.png" alt="Logo BlackPoint Bar" class="img-fluid mb-4" style="max-width: 200px;">
+    <h1 class="mb-4">Bem-vindo(a)<br>BlackPoint Bar</h1>
+    <a href="menu.html" onclick="setAccessGranted(event)" id="menu-button"
+      class="btn btn-lg btn-warning px-5 py-3 mb-4 shadow rounded-pill fw-bold pulse-button">
+      <i class="fas fa-utensils me-2"></i> <span id="button-text">Cardápio</span>
+    </a>
+    <!-- Ícone de taças de cerveja -->
+    <div class="beer-icon">
+      <i class="fas fa-beer cheers-left"></i>
+      <i class="fas fa-beer cheers-right"></i>
+      
+    </div>
+
+    <script>
+      function setAccessGranted(event) {
+        event.preventDefault();
+        sessionStorage.setItem('access_granted', 'true');
+        window.location.href = 'menu.html';
+      }
+
+      const textElement = document.getElementById('btn-text');
+      const messages = ['Cardápio Digital', 'Clique aqui'];
+      let index = 0;
+
+      setInterval(() => {
+        textElement.style.opacity = 0.4;
+
+        setTimeout(() => {
+          index = (index + 1) % messages.length;
+          textElement.textContent = messages[index];
+          textElement.style.opacity = 1;
+        }, 400); // fade de saída
+
+      }, 5000); // troca a cada 5 segundos (mais suave)
+    </script>
+
+
+
+    <div class="mt-5 mb-4">
+      <h5 class="mb-3">Aceitamos pagamentos via:</h5>
+      <div class="d-flex justify-content-center gap-4 fs-2">
+        <i class="fa-brands fa-pix text-success" title="Pix"></i>
+        <i class="fa-brands fa-cc-mastercard text-danger" title="Mastercard"></i>
+        <i class="fa-brands fa-cc-visa text-primary" title="Visa"></i>
+        <i class="fa-solid fa-money-bill-wave text-success" title="Dinheiro"></i>
+        <i class="fa-brands fa-cc-amex text-info" title="Hipercard"></i>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-black text-center text-white py-3 mt-auto">
+    Todos os direitos reservados &copy; BlackPoint Bar
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

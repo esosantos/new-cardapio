@@ -1,0 +1,15 @@
+.categoria-card {
+    background-color: #1f1f1f;
+    border: 2px solid #ffc107;
+    border-radius: 12px;
+    color: aliceblue;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  
+  .categoria-card:hover {
+    background-color: #ffc107;
+    color: #000;
+    transform: scale(1.05);
+  }
+  
